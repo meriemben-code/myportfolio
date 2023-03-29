@@ -984,7 +984,7 @@
                     </div>
                     <div class="contact_content">
                     <h3 class="contact_title">Write me your project</h3>
-                    <form action="" method="" class="contact_form" onsubmit="submit()">
+                    <form action="" method="" class="contact_form" onsubmit="submit()" id="contact_form-input">
                         <div class="contact_form-div">
                             <label for="" class="contact_form-tag" >Name</label>
                             <input type="text" class="contact_form-input" placeholder="Insert your name" id="name" name="name">
@@ -1039,7 +1039,7 @@
     let name=document.getElementById("name");
     let email=document.getElementById("email");
     let project=document.getElementById("project");
-    let form=document.getElementByCalssName("contact_form-input")
+    let form=document.getElementById("contact_form-input")
     
         let submit=function(){
         if(name!=""&&email!=""&&project!=""){
